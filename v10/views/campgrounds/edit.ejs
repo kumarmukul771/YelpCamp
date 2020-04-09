@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+<div class="container">
+    <form action="/campgrounds/<%= campGround._id %>?_method=PUT" method="POST">
+        <h1 style="color: steelblue; text-align: center;">Edit <%= campGround.name %></h1>
+        <input type="text" name="name" placeholder="Name" value="<%= campGround.name %>" style="display: block; width: 30%; margin: 20px; margin-left: 35%;">
+        <input type="text" name="image" placeholder="Image url" value="<%= campGround.image %>" style="display: block; width: 30%; margin: 20px; margin-left: 35%;">
+        <input type="text" name="desc" placeholder="Description" value="<%= campGround.desc %>" style="display: block; width: 30%; margin: 20px; margin-left: 35%;">
+        <input type="submit" class="btn btn-primary" value="Submit" style="display: block; width: 30%; margin: 20px; margin-left: 35%;">
+    </form>
+</div>
+</body>
+</html>
